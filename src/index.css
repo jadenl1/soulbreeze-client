@@ -1,0 +1,17 @@
+:root {
+  --color-dark: #151527;
+  --color-light: #F4F2EA;
+  --color-accent: #48BFEA;
+  --color-secondary-light: #AAA272;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
