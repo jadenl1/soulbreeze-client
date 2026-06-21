@@ -1,17 +1,17 @@
 :root {
-  --color-dark: #151527;
-  --color-light: #F4F2EA;
-  --color-accent: #48BFEA;
-  --color-secondary-light: #AAA272;
+	--color-dark: #151527;
+	--color-light: #f8f5e8;
+	--color-accent: #48bfea;
+	--color-secondary-light: #c9c9ba;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: var(--color-light);
-  color: var(--color-dark);
+	background-color: var(--color-light);
+	color: var(--color-dark);
 }

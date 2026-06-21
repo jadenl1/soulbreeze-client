@@ -1,22 +1,57 @@
 .hero {
 	position: relative;
-	min-height: 100vh;
-	padding-top: 70px;
+	min-height: 123vh;
+	background-color: var(--color-light);
+}
+
+.hero-content {
+	position: absolute;
+	top: 70px;
+	bottom: 38%;
+	left: 0;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
-	background-color: var(--color-light);
+	transform: translateY(-25px);
 }
 
-.hero-bottom-box {
+.hero-ribbon {
 	position: absolute;
-	bottom: 0;
+	bottom: 8%;
 	left: 0;
 	width: 100%;
-	height: 25%;
-	background-color: var(--color-dark);
+	height: 30%;
+	display: flex;
+}
+
+.ribbon-segment {
+	position: relative;
+	flex: 1;
+	background-size: 280% auto;
+	background-position: center;
+	background-repeat: repeat-y;
+	animation: ribbon-scroll 12s linear infinite;
+}
+
+.ribbon-can {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 130%;
+	width: auto;
+}
+
+@keyframes ribbon-scroll {
+	from {
+		background-position-y: 0%;
+	}
+	to {
+		background-position-y: 100%;
+	}
 }
 
 .hero-logo {
@@ -27,7 +62,7 @@
 	font-family: "Playfair Display", serif;
 	font-weight: 900;
 	font-style: italic;
-	font-size: 80px;
+	font-size: 86px;
 	line-height: 0.8;
 	letter-spacing: -4px;
 	text-align: center;
