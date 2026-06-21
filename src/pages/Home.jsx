@@ -15,6 +15,7 @@ export default function Home() {
       <p className="hero-subtext">
         Real ingredients, real flavor,<br />directly from the source.
       </p>
+      <div className="hero-bottom-box" />
     </div>
   );
 }
