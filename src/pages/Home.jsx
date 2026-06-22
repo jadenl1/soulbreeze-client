@@ -128,6 +128,28 @@ export default function Home() {
 					</p>
 				</div>
 			</section>
+			<hr className="section-divider" />
+			<section className="cta-section">
+				<h2 className="cta-heading">Don&apos;t Miss Your Chance.</h2>
+				<p className="cta-text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<div className="cta-buttons">
+					<button className="btn btn-filled">
+						<span className="btn-label">
+							<span className="btn-label-top">Our Locations</span>
+							<span className="btn-label-bottom">Our Locations</span>
+						</span>
+					</button>
+					<button className="btn btn-outline-bordered">
+						<span className="btn-label">
+							<span className="btn-label-top">Get Us In Your Store</span>
+							<span className="btn-label-bottom">Get Us In Your Store</span>
+						</span>
+					</button>
+				</div>
+			</section>
 		</>
 	);
 }
