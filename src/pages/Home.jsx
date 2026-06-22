@@ -5,6 +5,7 @@ import agaveRaspberry from "../assets/agave-raspberry.jpg";
 import agaveYellow from "../assets/agave-yellow.jpg";
 import can from "../assets/can-transparent.png";
 import agaveBlue from "../assets/agave-blue-transparent.png";
+import cheers from "../assets/Desktop-Cheers.jpg";
 import "../styles/Home.css";
 
 export default function Home() {
@@ -100,6 +101,31 @@ export default function Home() {
 							Our signature blend of Tequila + Black Tea + Lime
 						</p>
 					</div>
+				</div>
+			</section>
+			<hr className="section-divider" />
+			<section className="story-section">
+				<div className="story-image-wrap">
+					<img src={cheers} alt="Cheers with Soul Breeze cans" className="story-image" />
+					<div className="story-badge">
+						<span>EST. 2026</span>
+						<span>EAST COAST</span>
+					</div>
+				</div>
+				<div className="story-content">
+					<span className="story-label">OUR STORY</span>
+					<h2 className="story-heading">Created With Soul.</h2>
+					<p className="story-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+						veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+						commodo consequat.
+					</p>
+					<p className="story-text">
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+						dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
 				</div>
 			</section>
 		</>
