@@ -1,4 +1,5 @@
 import { FaInstagram, FaTiktok } from "react-icons/fa6";
+import SocialGallery from "../components/SocialGallery";
 import logo from "../assets/soulbreeze-logo.png";
 import agaveClassic from "../assets/agave-classic.jpg";
 import agavePeach from "../assets/agave-peach.jpg";
@@ -62,6 +63,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+			<SocialGallery />
 			<section className="feature-grid">
 				<div className="feature-row">
 					<div className="feature-card feature-light" style={{ flex: 1.5 }}>
