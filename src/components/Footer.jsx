@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaTiktok } from "react-icons/fa6";
 import logo from "../assets/soulbreeze-logo-light.png";
 import agaveBlue from "../assets/agave-blue-transparent.png";
 import "../styles/Footer.css";
@@ -23,6 +23,7 @@ export default function Footer() {
           <span className="footer-col-title">SUPPORT</span>
           <a href="#shipping" className="footer-link">Shipping</a>
           <a href="#contact" className="footer-link">Contact Us</a>
+          <a href="#retailers" className="footer-link">For Retailers</a>
         </div>
 
         <div className="footer-col">
@@ -31,13 +32,13 @@ export default function Footer() {
             <a href="#" aria-label="Instagram" className="footer-icon">
               <FaInstagram />
             </a>
-            <a href="#" aria-label="Facebook" className="footer-icon">
-              <FaFacebook />
-            </a>
-            <a href="#" aria-label="X" className="footer-icon">
-              <FaXTwitter />
+            <a href="#" aria-label="TikTok" className="footer-icon">
+              <FaTiktok />
             </a>
           </div>
+          <a href="#ambassador" className="footer-ambassador-link">
+            Become an Ambassador →
+          </a>
         </div>
 
         <div className="footer-meta">

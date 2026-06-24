@@ -68,6 +68,14 @@
 	height: 18px;
 }
 
+.footer-ambassador-link {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	color: var(--color-gold);
+	text-decoration: none;
+}
+
 .footer-meta {
 	margin-left: auto;
 	display: flex;

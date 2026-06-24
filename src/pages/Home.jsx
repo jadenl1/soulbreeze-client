@@ -1,3 +1,4 @@
+import { FaInstagram, FaTiktok } from "react-icons/fa6";
 import logo from "../assets/soulbreeze-logo.png";
 import agaveClassic from "../assets/agave-classic.jpg";
 import agavePeach from "../assets/agave-peach.jpg";
@@ -14,11 +15,6 @@ export default function Home() {
 			<div className="hero">
 				<div className="hero-content">
 					<img src={logo} alt="Soulbreeze" className="hero-logo" />
-					<h1 className="hero-heading">
-						Feel the
-						<br />
-						Breeze
-					</h1>
 					<div className="hero-buttons">
 						<button className="btn btn-filled">
 							<span className="btn-label">
@@ -26,10 +22,10 @@ export default function Home() {
 								<span className="btn-label-bottom">Our Locations</span>
 							</span>
 						</button>
-						<button className="btn btn-outline">
+						<button className="btn btn-outline-bordered">
 							<span className="btn-label">
-								<span className="btn-label-top">Get Us in Your Store</span>
-								<span className="btn-label-bottom">Get Us in Your Store</span>
+								<span className="btn-label-top">Become an Ambassador</span>
+								<span className="btn-label-bottom">Become an Ambassador</span>
 							</span>
 						</button>
 					</div>
@@ -117,25 +113,34 @@ export default function Home() {
 					<h2 className="story-heading">Created With Soul.</h2>
 					<p className="story-text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-						veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat.
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
 					</p>
 					<p className="story-text">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-						dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+						eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+						sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
 				</div>
 			</section>
 			<hr className="section-divider" />
-			<section className="cta-section">
-				<h2 className="cta-heading">Don&apos;t Miss Your Chance.</h2>
-				<p className="cta-text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
+			<section className="ambassador-section">
+				<span className="ambassador-label">FOLLOW THE BREEZE</span>
+				<h2 className="ambassador-heading">Repping Soulbreeze.</h2>
+				<p className="ambassador-text">
+					Already posting about us? Tag us and join the crew. Ambassadors get early access
+					to new flavors, exclusive merch, and a cut of every sale they bring in.
 				</p>
-				<div className="cta-buttons">
+				<div className="ambassador-social">
+					<a href="#" aria-label="Instagram" className="ambassador-icon">
+						<FaInstagram />
+					</a>
+					<a href="#" aria-label="TikTok" className="ambassador-icon">
+						<FaTiktok />
+					</a>
+				</div>
+				<div className="ambassador-buttons">
 					<button className="btn btn-filled">
 						<span className="btn-label">
 							<span className="btn-label-top">Our Locations</span>
@@ -144,8 +149,8 @@ export default function Home() {
 					</button>
 					<button className="btn btn-outline-bordered">
 						<span className="btn-label">
-							<span className="btn-label-top">Get Us In Your Store</span>
-							<span className="btn-label-bottom">Get Us In Your Store</span>
+							<span className="btn-label-top">Become an Ambassador</span>
+							<span className="btn-label-bottom">Become an Ambassador</span>
 						</span>
 					</button>
 				</div>

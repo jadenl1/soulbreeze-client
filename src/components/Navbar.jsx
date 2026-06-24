@@ -11,7 +11,7 @@ export default function Navbar() {
 					HOME
 				</NavLink>
 				<NavLink to="/products" className="navbar-link">
-					PRODUCTS
+					OUR LINEUP
 				</NavLink>
 				<NavLink to="/locations" className="navbar-link">
 					LOCATIONS
