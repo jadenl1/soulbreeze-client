@@ -147,14 +147,24 @@
 	border: none;
 }
 
-.hero-subtext {
+.hero-callouts {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin-top: 15px;
+	margin-bottom: 0px;
 	font-family: "Manrope", sans-serif;
-	font-weight: 400;
-	font-size: 14px;
-	text-align: center;
-	color: var(--color-dark);
-	opacity: 0.7;
-	margin-top: 16px;
+	font-weight: 600;
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--color-gold);
+	opacity: 1;
+}
+
+.hero-callout-dot {
+	color: var(--color-gold);
+	opacity: 1;
 }
 
 .social-gallery {
@@ -176,7 +186,7 @@
 
 .social-photo {
 	position: relative;
-	flex: 1;
+	flex: 2.6;
 	height: 420px;
 	border-radius: 4px;
 	overflow: hidden;
@@ -188,7 +198,7 @@
 }
 
 .social-photo-active {
-	flex: 5;
+	flex: 6.5;
 }
 
 .social-photo-img {
@@ -216,20 +226,19 @@
 	font-family: "Manrope", sans-serif;
 	font-weight: 600;
 	font-size: 13px;
+	line-height: 1;
 	color: var(--color-light);
-	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.social-photo-caption {
-	position: relative;
-	z-index: 1;
-	padding: 14px;
-	font-family: "Manrope", sans-serif;
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 1.4;
-	color: var(--color-light);
-	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+.social-photo-header svg {
+	display: block;
+	flex-shrink: 0;
+	font-size: 15px;
+	transform: translateY(1px);
+}
+
+.social-photo-header span {
+	display: block;
 }
 
 .social-gallery-controls {

@@ -16,6 +16,13 @@ export default function Home() {
 			<div className="hero">
 				<div className="hero-content">
 					<img src={logo} alt="Soulbreeze" className="hero-logo" />
+					<div className="hero-callouts">
+						<span>Premium Tequila</span>
+						<span className="hero-callout-dot">·</span>
+						<span>Brewed Tea</span>
+						<span className="hero-callout-dot">·</span>
+						<span>Refreshing Taste</span>
+					</div>
 					<div className="hero-buttons">
 						<button className="btn btn-filled">
 							<span className="btn-label">
@@ -30,11 +37,6 @@ export default function Home() {
 							</span>
 						</button>
 					</div>
-					<p className="hero-subtext">
-						Real ingredients, real flavor,
-						<br />
-						directly from the source.
-					</p>
 				</div>
 				<div className="hero-ribbon">
 					<div

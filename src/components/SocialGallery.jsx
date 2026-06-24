@@ -98,9 +98,6 @@ export default function SocialGallery() {
 								alt={photo.caption}
 								className="social-photo-img"
 							/>
-							{isActive && (
-								<p className="social-photo-caption">{photo.caption}</p>
-							)}
 						</div>
 					);
 				})}
