@@ -1,0 +1,36 @@
+.page-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 16px;
+	padding: 140px 80px 60px;
+	background-color: var(--color-light);
+}
+
+.page-header-label {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	letter-spacing: 4px;
+	color: var(--color-dark);
+}
+
+.page-header-heading {
+	font-family: "Playfair Display", serif;
+	font-weight: 100;
+	font-style: italic;
+	font-size: 64px;
+	letter-spacing: -2px;
+	color: var(--color-dark);
+	line-height: 1;
+}
+
+.page-header-text {
+	font-family: "Manrope", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.7;
+	color: var(--color-gold);
+	max-width: 480px;
+}

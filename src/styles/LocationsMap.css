@@ -1,0 +1,314 @@
+.locations-map-card {
+	display: flex;
+	max-width: 1100px;
+	margin: 0 auto 100px;
+	height: 640px;
+	border-radius: 22px;
+	overflow: hidden;
+}
+
+.locations-sidebar {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	width: 280px;
+	flex-shrink: 0;
+	padding: 16px;
+	background-color: var(--color-dark);
+}
+
+.locations-search-wrap {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.locations-search-icon {
+	position: absolute;
+	left: 14px;
+	color: var(--color-light);
+	opacity: 0.5;
+	font-size: 13px;
+	pointer-events: none;
+}
+
+.locations-search {
+	width: 100%;
+	font-family: "Manrope", sans-serif;
+	font-size: 14px;
+	color: var(--color-light);
+	background-color: rgba(244, 242, 234, 0.1);
+	border: none;
+	border-radius: 10px;
+	padding: 12px 36px 12px 36px;
+}
+
+.locations-search-clear {
+	position: absolute;
+	right: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--color-light);
+	opacity: 0.5;
+	background-color: transparent;
+	border: none;
+	font-size: 13px;
+	cursor: pointer;
+	transition: opacity 0.2s ease;
+}
+
+.locations-search-clear:hover {
+	opacity: 0.9;
+}
+
+.locations-search::placeholder {
+	color: var(--color-light);
+	opacity: 0.5;
+}
+
+.locations-search:focus {
+	outline: none;
+	box-shadow: 0 0 0 1px rgba(174, 160, 106, 0.4);
+}
+
+.locations-locate-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	letter-spacing: 0.3px;
+	color: var(--color-light);
+	background-color: rgba(244, 242, 234, 0.08);
+	border: none;
+	border-radius: 10px;
+	padding: 11px 14px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.locations-locate-btn svg {
+	color: var(--color-gold);
+	font-size: 14px;
+}
+
+.locations-locate-btn:hover {
+	background-color: rgba(244, 242, 234, 0.16);
+}
+
+.locations-list {
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+}
+
+.locations-list-item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 2px;
+	padding: 0 16px;
+	margin-bottom: 16px;
+	border: none;
+	border-left: 2px solid transparent;
+	background-color: transparent;
+	cursor: pointer;
+	text-align: left;
+	transition: border-color 0.2s ease;
+}
+
+.locations-list-item:last-child {
+	margin-bottom: 0;
+}
+
+.locations-list-item:hover,
+.locations-list-item-active {
+	border-left-color: var(--color-gold);
+}
+
+.locations-list-name-row {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+}
+
+.locations-list-name {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	color: var(--color-light);
+	opacity: 0.5;
+	transition: opacity 0.2s ease;
+}
+
+.locations-no-results {
+	font-family: "Manrope", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: var(--color-light);
+	opacity: 0.5;
+	padding: 4px 16px;
+}
+
+.locations-list-distance {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	color: var(--color-gold);
+	opacity: 0.8;
+}
+
+.locations-list-item:hover .locations-list-name,
+.locations-list-item-active .locations-list-name {
+	opacity: 1;
+}
+
+.locations-list-address {
+	font-family: "Manrope", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	color: var(--color-light);
+	opacity: 0.3;
+	transition: opacity 0.2s ease;
+}
+
+.locations-list-item:hover .locations-list-address,
+.locations-list-item-active .locations-list-address {
+	opacity: 0.6;
+}
+
+.locations-map-wrap {
+	position: relative;
+	flex: 1;
+}
+
+.map-pin {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--color-dark);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+	cursor: pointer;
+}
+
+.map-pin-logo {
+	width: 24px;
+	height: auto;
+	object-fit: contain;
+}
+
+.map-user-pin {
+	position: relative;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: var(--color-gold);
+	border: 2px solid var(--color-light);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.map-user-pin-pulse {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: var(--color-gold);
+	transform: translate(-50%, -50%);
+	animation: user-pin-pulse 2s ease-out infinite;
+}
+
+@keyframes user-pin-pulse {
+	0% {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 0.5;
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(3);
+		opacity: 0;
+	}
+}
+
+.mapboxgl-popup-content {
+	padding: 16px 18px;
+	border-radius: 16px;
+	box-shadow: 0 12px 28px rgba(21, 21, 39, 0.25);
+}
+
+.mapboxgl-popup-tip {
+	display: none;
+}
+
+.mapboxgl-popup-close-button {
+	font-size: 18px;
+	color: var(--color-dark);
+	opacity: 0.4;
+	right: 8px;
+	top: 8px;
+}
+
+.mapboxgl-popup-close-button:hover {
+	background-color: transparent;
+	opacity: 0.8;
+}
+
+.map-popup {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	min-width: 190px;
+}
+
+.map-popup-header {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+}
+
+.map-popup-name {
+	font-family: "Manrope", sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	color: var(--color-dark);
+}
+
+.map-popup-distance {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	color: var(--color-gold);
+}
+
+.map-popup-address {
+	font-family: "Manrope", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.4;
+	color: var(--color-dark);
+	opacity: 0.55;
+}
+
+.map-popup-directions {
+	margin-top: 8px;
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	color: var(--color-light);
+	background-color: var(--color-dark);
+	border-radius: 999px;
+	padding: 9px 16px;
+	text-align: center;
+	text-decoration: none;
+	transition: opacity 0.2s ease;
+}
+
+.map-popup-directions:hover {
+	opacity: 0.85;
+}
