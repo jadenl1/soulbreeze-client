@@ -15,15 +15,15 @@ export default function Home() {
 		<>
 			<div className="hero">
 				<div className="hero-content">
-					<img src={logo} alt="Soulbreeze" className="hero-logo" />
-					<div className="hero-callouts">
+					<img src={logo} alt="Soulbreeze" className="hero-logo" data-aos="fade-up" data-aos-delay="0" />
+					<div className="hero-callouts" data-aos="fade-up" data-aos-delay="100">
 						<span>Premium Tequila</span>
 						<span className="hero-callout-dot">·</span>
 						<span>Brewed Tea</span>
 						<span className="hero-callout-dot">·</span>
 						<span>Refreshing Taste</span>
 					</div>
-					<div className="hero-buttons">
+					<div className="hero-buttons" data-aos="fade-up" data-aos-delay="200">
 						<button className="btn btn-filled">
 							<span className="btn-label">
 								<span className="btn-label-top">Our Locations</span>
@@ -38,7 +38,7 @@ export default function Home() {
 						</button>
 					</div>
 				</div>
-				<div className="hero-ribbon">
+				<div className="hero-ribbon" data-aos="fade-up" data-aos-delay="300">
 					<div
 						className="ribbon-segment ribbon-1"
 						style={{ backgroundImage: `url(${agaveClassic})` }}
@@ -68,14 +68,14 @@ export default function Home() {
 			<SocialGallery />
 			<section className="feature-grid">
 				<div className="feature-row">
-					<div className="feature-card feature-light" style={{ flex: 1.5 }}>
+					<div className="feature-card feature-light" style={{ flex: 1.5 }} data-aos="fade-up" data-aos-delay="0">
 						<h2 className="feature-heading feature-heading-dark">Real Blue Agave</h2>
 						<p className="feature-text feature-text-accent">
 							Sourced from the heart of Jalisco, our tequila provides a smooth, earthy
 							backbone to every flavor profile.
 						</p>
 					</div>
-					<div className="feature-card feature-dark" style={{ flex: 1 }}>
+					<div className="feature-card feature-dark" style={{ flex: 1 }} data-aos="fade-up" data-aos-delay="120">
 						<div
 							className="feature-card-bg"
 							style={{ backgroundImage: `url(${agaveBlue})` }}
@@ -87,7 +87,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="feature-row">
-					<div className="feature-card feature-dark" style={{ flex: 1 }}>
+					<div className="feature-card feature-dark" style={{ flex: 1 }} data-aos="fade-up" data-aos-delay="0">
 						<div
 							className="feature-card-bg"
 							style={{ backgroundImage: `url(${agaveBlue})` }}
@@ -95,7 +95,7 @@ export default function Home() {
 						<h2 className="feature-heading feature-heading-accent">Zero</h2>
 						<p className="feature-text feature-text-light">Added sugars</p>
 					</div>
-					<div className="feature-card feature-light" style={{ flex: 2.2 }}>
+					<div className="feature-card feature-light" style={{ flex: 2.2 }} data-aos="fade-up" data-aos-delay="120">
 						<h2 className="feature-heading feature-heading-dark">The Classic</h2>
 						<p className="feature-text feature-text-accent">
 							Our signature blend of Tequila + Black Tea + Lime
@@ -105,7 +105,7 @@ export default function Home() {
 			</section>
 			<hr className="section-divider" />
 			<section className="story-section">
-				<div className="story-image-wrap">
+				<div className="story-image-wrap" data-aos="fade-up" data-aos-delay="0">
 					<img src={cheers} alt="Cheers with Soul Breeze cans" className="story-image" />
 					<div className="story-badge">
 						<span>EST. 2026</span>
@@ -113,15 +113,15 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="story-content">
-					<span className="story-label">OUR STORY</span>
-					<h2 className="story-heading">Created With Soul.</h2>
-					<p className="story-text">
+					<span className="story-label" data-aos="fade-up" data-aos-delay="0">OUR STORY</span>
+					<h2 className="story-heading" data-aos="fade-up" data-aos-delay="100">Created With Soul.</h2>
+					<p className="story-text" data-aos="fade-up" data-aos-delay="180">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat.
 					</p>
-					<p className="story-text">
+					<p className="story-text" data-aos="fade-up" data-aos-delay="240">
 						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
 						eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
 						sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -130,13 +130,13 @@ export default function Home() {
 			</section>
 			<hr className="section-divider" />
 			<section className="ambassador-section">
-				<span className="ambassador-label">FOLLOW THE BREEZE</span>
-				<h2 className="ambassador-heading">Repping Soulbreeze.</h2>
-				<p className="ambassador-text">
+				<span className="ambassador-label" data-aos="fade-up" data-aos-delay="0">FOLLOW THE BREEZE</span>
+				<h2 className="ambassador-heading" data-aos="fade-up" data-aos-delay="100">Repping Soulbreeze.</h2>
+				<p className="ambassador-text" data-aos="fade-up" data-aos-delay="180">
 					Already posting about us? Tag us and join the crew. Ambassadors get early access
 					to new flavors, exclusive merch, and a cut of every sale they bring in.
 				</p>
-				<div className="ambassador-social">
+				<div className="ambassador-social" data-aos="fade-up" data-aos-delay="260">
 					<a href="#" aria-label="Instagram" className="ambassador-icon">
 						<FaInstagram />
 					</a>
@@ -144,7 +144,7 @@ export default function Home() {
 						<FaTiktok />
 					</a>
 				</div>
-				<div className="ambassador-buttons">
+				<div className="ambassador-buttons" data-aos="fade-up" data-aos-delay="340">
 					<button className="btn btn-filled">
 						<span className="btn-label">
 							<span className="btn-label-top">Our Locations</span>

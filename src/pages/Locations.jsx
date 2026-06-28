@@ -5,18 +5,27 @@ export default function Locations() {
 	return (
 		<>
 			<section className="page-header">
-				<span className="page-header-label">WHERE TO FIND US</span>
-				<h1 className="page-header-heading">
+				<div className="page-header-label-row" data-aos="fade-up" data-aos-delay="0">
+					<span className="page-header-rule" />
+					<span className="page-header-label">Where to Find Us</span>
+					<span className="page-header-rule" />
+				</div>
+				<h1 className="page-header-heading" data-aos="fade-up" data-aos-delay="100">
 					Feel the Breeze,
 					<br />
 					Wherever You Are.
 				</h1>
-				<p className="page-header-text">
-					From coastal taprooms to your neighborhood store, find the nearest spot to grab a
-					Soulbreeze and bring the breeze with you.
-				</p>
+				<div className="page-header-callouts" data-aos="fade-up" data-aos-delay="200">
+					<span>East Coast</span>
+					<span className="page-header-dot">·</span>
+					<span>Select Retailers</span>
+					<span className="page-header-dot">·</span>
+					<span>Find One Near You</span>
+				</div>
 			</section>
-			<LocationsMap />
+			<div data-aos="fade-up" data-aos-delay="0">
+				<LocationsMap />
+			</div>
 		</>
 	);
 }

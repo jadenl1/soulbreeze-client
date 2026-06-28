@@ -1,0 +1,292 @@
+.vpd-page {
+	display: flex;
+	align-items: flex-start;
+	gap: 80px;
+	padding: 140px 160px 60px;
+	min-height: calc(100vh - 60px);
+	background-color: var(--color-light);
+}
+
+/* Left */
+
+.vpd-left {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+	align-self: flex-start;
+}
+
+.vpd-placeholder {
+	width: 300px;
+	height: 300px;
+	background-color: var(--color-secondary-light);
+	border-radius: 20px;
+	opacity: 0.3;
+}
+
+.vpd-callouts {
+	display: flex;
+	gap: 32px;
+	justify-content: center;
+}
+
+.vpd-callout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3px;
+}
+
+.vpd-callout-value {
+	font-family: "Manrope", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: var(--color-dark);
+	line-height: 1;
+}
+
+.vpd-callout-label {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 9px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	color: var(--color-dark);
+}
+
+/* Right */
+
+.vpd-right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	min-width: 0;
+}
+
+.vpd-back-link {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--color-secondary-light);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.vpd-back-link:hover {
+	color: var(--color-dark);
+}
+
+.vpd-header {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.vpd-label-row {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.vpd-rule {
+	display: block;
+	width: 30px;
+	height: 1px;
+	background-color: var(--color-secondary-light);
+}
+
+.vpd-label {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 10px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: var(--color-secondary-light);
+}
+
+.vpd-name {
+	font-family: "Playfair Display", serif;
+	font-weight: 100;
+	font-style: italic;
+	font-size: 64px;
+	letter-spacing: -3px;
+	line-height: 0.9;
+	color: var(--color-dark);
+}
+
+.vpd-subtitle {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 10px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: var(--color-gold);
+}
+
+.vpd-stars {
+	display: flex;
+	gap: 3px;
+	margin-top: 2px;
+}
+
+.vpd-star {
+	font-size: 12px;
+	color: var(--color-secondary-light);
+}
+
+.vpd-star-filled {
+	color: var(--color-gold);
+}
+
+/* CTA */
+
+.vpd-cta {
+	align-self: flex-start;
+	font-size: 13px;
+	padding: 10px 24px;
+	margin: 10px 0;
+}
+
+/* Tabs */
+
+.vpd-tabs-section {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.vpd-tabs {
+	position: relative;
+	display: flex;
+	gap: 0;
+	border-bottom: 1px solid rgba(201, 201, 186, 0.5);
+}
+
+.vpd-tab {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	color: var(--color-secondary-light);
+	background: none;
+	border: none;
+	padding: 0 0 10px;
+	margin-right: 24px;
+	cursor: pointer;
+	transition: color 0.2s ease;
+}
+
+.vpd-tab:hover {
+	color: var(--color-dark);
+}
+
+.vpd-tab-active {
+	color: var(--color-dark);
+}
+
+.vpd-tab-indicator {
+	position: absolute;
+	bottom: -1px;
+	height: 2px;
+	background-color: var(--color-dark);
+	transition: left 0.25s ease, width 0.25s ease;
+}
+
+@keyframes vpd-tab-fade-up {
+	from { opacity: 0; transform: translateY(10px); }
+	to   { opacity: 1; transform: translateY(0); }
+}
+
+.vpd-tab-content {
+	min-height: 80px;
+	animation: vpd-tab-fade-up 0.3s ease-out both;
+}
+
+.vpd-description {
+	font-family: "Manrope", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+	color: var(--color-dark);
+}
+
+/* Flavors */
+
+.vpd-flavors-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 8px;
+}
+
+.vpd-flavor-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: rgba(201, 201, 186, 0.18);
+	border-radius: 16px;
+	padding: 20px 12px 20px;
+	transition: background-color 0.2s ease;
+}
+
+.vpd-flavor-card:hover {
+	background-color: rgba(201, 201, 186, 0.3);
+}
+
+.vpd-flavor-can {
+	height: 160px;
+	width: auto;
+	object-fit: contain;
+	transition: transform 0.3s ease;
+}
+
+.vpd-flavor-card:hover .vpd-flavor-can {
+	transform: translateY(-6px) scale(1.04);
+}
+
+.vpd-flavor-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+	padding: 14px 0 0;
+	text-align: center;
+}
+
+.vpd-flavor-name {
+	font-family: "Playfair Display", serif;
+	font-weight: 100;
+	font-style: italic;
+	font-size: 20px;
+	letter-spacing: -0.5px;
+	color: var(--color-dark);
+	line-height: 1;
+}
+
+.vpd-flavor-subtitle {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 9px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--color-gold);
+}
+
+/* Not found */
+
+.vpd-not-found {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	padding: 200px 80px;
+	text-align: center;
+	font-family: "Manrope", sans-serif;
+}

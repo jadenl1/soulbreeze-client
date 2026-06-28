@@ -1,0 +1,405 @@
+/* Page layout — fills viewport below navbar */
+
+.pd-page {
+	display: flex;
+	align-items: flex-start;
+	gap: 80px;
+	padding: 140px 160px 60px;
+	min-height: calc(100vh - 60px);
+	background-color: var(--color-light);
+}
+
+/* Left — can */
+
+.pd-left {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+	gap: 24px;
+}
+
+.pd-can-img {
+	height: 460px;
+	width: auto;
+	object-fit: contain;
+}
+
+/* Right — info */
+
+.pd-right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	min-width: 0;
+}
+
+.pd-back-link {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--color-secondary-light);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.pd-back-link:hover {
+	color: var(--color-dark);
+}
+
+/* Header */
+
+.pd-header {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.pd-label-row {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.pd-rule {
+	display: block;
+	width: 30px;
+	height: 1px;
+	background-color: var(--color-secondary-light);
+}
+
+.pd-label {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 10px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: var(--color-secondary-light);
+}
+
+.pd-name {
+	font-family: "Playfair Display", serif;
+	font-weight: 100;
+	font-style: italic;
+	font-size: 64px;
+	letter-spacing: -3px;
+	line-height: 0.9;
+	color: var(--color-dark);
+}
+
+.pd-subtitle {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 10px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: var(--color-gold);
+}
+
+.pd-stars {
+	display: flex;
+	gap: 3px;
+	margin-top: 2px;
+}
+
+.pd-star {
+	font-size: 12px;
+	color: var(--color-secondary-light);
+}
+
+.pd-star-filled {
+	color: var(--color-gold);
+}
+
+/* Callouts */
+
+.pd-callouts {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.pd-callout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3px;
+}
+
+.pd-callout-value {
+	font-family: "Manrope", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1;
+	color: var(--color-dark);
+}
+
+.pd-callout-label {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 9px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	color: var(--color-dark);
+}
+
+/* CTA */
+
+.pd-cta {
+	align-self: flex-start;
+	font-size: 13px;
+	padding: 10px 24px;
+	margin: 10px 0;
+}
+
+/* Divider */
+
+.pd-divider {
+	height: 1px;
+	background-color: var(--color-secondary-light);
+	opacity: 0.5;
+}
+
+/* Tabs */
+
+.pd-tabs-section {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.pd-tabs {
+	position: relative;
+	display: flex;
+	gap: 0;
+	border-bottom: 1px solid rgba(201, 201, 186, 0.5);
+}
+
+.pd-tab {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	color: var(--color-secondary-light);
+	background: none;
+	border: none;
+	padding: 0 0 10px;
+	margin-right: 24px;
+	cursor: pointer;
+	transition: color 0.2s ease;
+}
+
+.pd-tab:hover {
+	color: var(--color-dark);
+}
+
+.pd-tab-active {
+	color: var(--color-dark);
+}
+
+.pd-tab-indicator {
+	position: absolute;
+	bottom: -1px;
+	height: 2px;
+	background-color: var(--color-dark);
+	transition: left 0.25s ease, width 0.25s ease;
+}
+
+@keyframes pd-tab-fade-up {
+	from { opacity: 0; transform: translateY(10px); }
+	to   { opacity: 1; transform: translateY(0); }
+}
+
+.pd-tab-content {
+	min-height: 80px;
+	animation: pd-tab-fade-up 0.3s ease-out both;
+}
+
+/* Accordion content */
+
+.pd-description {
+	font-family: "Manrope", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+	color: var(--color-dark);
+}
+
+.pd-text {
+	font-family: "Manrope", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+	color: var(--color-dark);
+}
+
+.pd-nutrition-grid {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+}
+
+.pd-nutrition-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 0;
+	border-bottom: 1px solid rgba(201, 201, 186, 0.5);
+	font-family: "Manrope", sans-serif;
+	font-size: 12px;
+	color: var(--color-dark);
+}
+
+.pd-nutrition-row:last-child {
+	border-bottom: none;
+}
+
+.pd-nutrition-row span:last-child {
+	font-weight: 600;
+}
+
+.pd-nutrition-calories {
+	border-bottom: 2px solid var(--color-dark);
+	padding-bottom: 8px;
+	margin-bottom: 2px;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+.pd-nutrition-cal-num {
+	font-size: 36px !important;
+	font-weight: 900 !important;
+	line-height: 1;
+}
+
+.pd-nutrition-indent {
+	padding-left: 16px;
+	font-size: 11px;
+	opacity: 0.75;
+}
+
+.pd-serving {
+	font-family: "Manrope", sans-serif;
+	font-size: 10px;
+	color: var(--color-secondary-light);
+	margin-top: 8px;
+}
+
+.pd-sizes {
+	display: flex;
+	gap: 32px;
+}
+
+.pd-sizes-group {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.pd-sizes-label {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--color-secondary-light);
+}
+
+.pd-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.pd-tag {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	letter-spacing: 0.5px;
+	color: var(--color-dark);
+	border: 1px solid var(--color-secondary-light);
+	padding: 5px 14px;
+	border-radius: 999px;
+}
+
+.pd-variety-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 14px;
+}
+
+.pd-variety-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: rgba(201, 201, 186, 0.18);
+	border-radius: 16px;
+	padding-bottom: 20px;
+	transition: background-color 0.2s ease;
+}
+
+.pd-variety-card:hover {
+	background-color: rgba(201, 201, 186, 0.3);
+}
+
+.pd-variety-pack-thumb {
+	width: 100%;
+	aspect-ratio: 1;
+	background-color: var(--color-secondary-light);
+	border-radius: 16px 16px 0 0;
+	opacity: 0.3;
+	transition: opacity 0.3s ease;
+}
+
+.pd-variety-card:hover .pd-variety-pack-thumb {
+	opacity: 0.45;
+}
+
+.pd-variety-info {
+	padding: 16px 16px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 6px;
+	width: 100%;
+}
+
+.pd-variety-name {
+	font-family: "Playfair Display", serif;
+	font-weight: 100;
+	font-style: italic;
+	font-size: 20px;
+	letter-spacing: -0.5px;
+	color: var(--color-dark);
+	line-height: 1;
+}
+
+.pd-variety-flavors {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 9px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	color: var(--color-gold);
+}
+
+/* Not found */
+
+.pd-not-found {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	padding: 200px 80px;
+	text-align: center;
+	font-family: "Manrope", sans-serif;
+}

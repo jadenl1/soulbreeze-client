@@ -1,5 +1,5 @@
 :root {
-	--color-dark: #151527;
+	--color-dark: #002b51;
 	--color-light: #f8f5e8;
 	--color-accent: #48bfea;
 	--color-secondary-light: #c9c9ba;
@@ -15,4 +15,8 @@
 body {
 	background-color: var(--color-light);
 	color: var(--color-dark);
+}
+
+[data-aos][data-aos][data-aos="fade-up"] {
+	transform: translate3d(0, 24px, 0);
 }
