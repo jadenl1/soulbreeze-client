@@ -13,17 +13,21 @@ export default function Footer() {
 
         <div className="footer-col">
           <span className="footer-col-title">EXPLORE</span>
-          <Link to="/products" className="footer-link">Products</Link>
+          <Link to="/products" className="footer-link">Our Lineup</Link>
           <Link to="/locations" className="footer-link">Locations</Link>
-          <a href="#our-story" className="footer-link">Our Story</a>
-          <a href="#ingredients" className="footer-link">Ingredients</a>
+          <Link to="/ambassador" className="footer-link">Become an Ambassador</Link>
         </div>
 
         <div className="footer-col">
           <span className="footer-col-title">SUPPORT</span>
-          <a href="#shipping" className="footer-link">Shipping</a>
-          <a href="#contact" className="footer-link">Contact Us</a>
-          <a href="#retailers" className="footer-link">For Retailers</a>
+          <Link to="/contact" className="footer-link">Contact Us</Link>
+        </div>
+
+        <div className="footer-col">
+          <span className="footer-col-title">LEGAL</span>
+          <Link to="/privacy" className="footer-link">Privacy Policy</Link>
+          <Link to="/terms" className="footer-link">Terms of Service</Link>
+          <Link to="/cookies" className="footer-link">Cookie Policy</Link>
         </div>
 
         <div className="footer-col">
@@ -36,9 +40,6 @@ export default function Footer() {
               <FaTiktok />
             </a>
           </div>
-          <a href="#ambassador" className="footer-ambassador-link">
-            Become an Ambassador →
-          </a>
         </div>
 
         <div className="footer-meta">

@@ -1,0 +1,139 @@
+.contact-page {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 40px;
+	padding: 60px 160px;
+	min-height: calc(100vh - 60px);
+	background-color: var(--color-light);
+}
+
+.contact-left {
+	flex: 0 0 auto;
+}
+
+.contact-heading {
+	font-family: "Playfair Display", serif;
+	font-weight: 100;
+	font-style: italic;
+	font-size: 82px;
+	letter-spacing: -4px;
+	line-height: 0.88;
+	color: var(--color-dark);
+}
+
+/* Form */
+
+.contact-form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.contact-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.contact-field {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.contact-field-full {
+	grid-column: 1 / -1;
+}
+
+.contact-ambassador-note {
+	font-family: "Manrope", sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--color-secondary-light);
+	margin-top: 12px;
+	line-height: 1.5;
+}
+
+.contact-ambassador-link {
+	color: var(--color-gold);
+	text-decoration: none;
+	font-weight: 600;
+	transition: opacity 0.2s ease;
+}
+
+.contact-ambassador-link:hover {
+	opacity: 0.7;
+}
+
+.contact-required {
+	color: var(--color-gold);
+	margin-left: 2px;
+}
+
+.contact-label {
+	font-family: "Manrope", sans-serif;
+	font-weight: 600;
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--color-secondary-light);
+}
+
+.contact-input {
+	font-family: "Manrope", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--color-dark);
+	background: rgba(201, 201, 186, 0.15);
+	border: 1px solid rgba(201, 201, 186, 0.6);
+	border-radius: 10px;
+	padding: 12px 16px;
+	outline: none;
+	transition: border-color 0.2s ease, background-color 0.2s ease;
+	width: 100%;
+}
+
+.contact-input::placeholder {
+	color: var(--color-secondary-light);
+	font-weight: 400;
+}
+
+.contact-input:focus {
+	border-color: var(--color-dark);
+	background: rgba(201, 201, 186, 0.08);
+}
+
+.contact-select {
+	appearance: none;
+	cursor: pointer;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c9c9ba' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 14px center;
+	background-color: rgba(201, 201, 186, 0.15);
+	padding-right: 36px;
+}
+
+.contact-select:focus {
+	border-color: var(--color-dark);
+}
+
+.contact-textarea {
+	resize: none;
+	height: 100px;
+	line-height: 1.7;
+}
+
+.contact-note {
+	font-family: "Manrope", sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--color-secondary-light);
+}
+
+.contact-submit {
+	align-self: flex-start;
+	margin-top: 4px;
+}
